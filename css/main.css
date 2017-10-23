@@ -1,0 +1,65 @@
+/*
+    #f9a91a --> Laboratoria
+    #f5f5f0 --> Color de fondo
+    #e0e0d1 --> Color de hover
+    #333 --> Color de active
+    font-family --> sans-serif
+*/
+body{
+  font-family: sans-serif;
+}
+/*"ul" elemento block*/
+ul{
+  /*"outline" es una propiedad que hace que se dibuje un contorno de la etiqueta, para ayuda visual*/
+  /*outline: 1px solid red;*/
+  /*quitar la propiedad de lista*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  /*aumenta el espaciado entre textos*/
+  line-height: 30px;
+}
+/*"li" elemento block*/
+li{
+  /*outline: 1px solid blue;*/
+  background: #f5f5f0
+}
+
+/*Estados de los enlaces:loVe/HAte Link Visited Hover Active*/
+
+/*elemento inline, solo ocupan el espacio de su contenido*/
+a{
+  /*outline: 1px solid green;*/
+  /*transforma la naturaleza del elementom, que inicialmente eres un "inline", ahora se vuelve "block"*/
+  display: block;
+  /*le quita el subrayado del texto*/
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+}
+
+a:hover{
+  background: #e0e0d1;
+}
+
+a:visited{
+  background: #333;
+  color:#fff;
+}
+
+ul li:first-child{
+  background: #f9a91a;
+}
+
+ul li:first-child a {
+  color: #fff;
+}
+
+ul li:first-child a:hover{
+  color:#000;
+}
+
+ul li:first-child a:active{
+  color:#fff;
+}
